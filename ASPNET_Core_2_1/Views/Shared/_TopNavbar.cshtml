@@ -9,11 +9,14 @@
             </form>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li style="padding:20px">
-                <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Seed Project</span>
+            <li>
+                <a asp-area="" asp-controller="Account" asp-action="Login">
+
+                    <i class="fa fa-sign-in"></i>  Login
+                </a>
             </li>
             <li>
-                <a href="#">
+                <a asp-area="" asp-controller="Account" asp-action="Logout">
                     <i class="fa fa-sign-out"></i> Log out
                 </a>
             </li>
