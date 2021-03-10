@@ -39,7 +39,7 @@ namespace ASPNET_Core_2_1
             });
 
 
-
+            services.AddTransient<SeedDb>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
