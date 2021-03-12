@@ -24,9 +24,9 @@ namespace ASPNET_Core_2_1.Data
             await _context.Database.EnsureCreatedAsync();
             await CheckRoles();
 
-            var manager = await CheckUserAsync("1010", "Juan", "Zuluaga", "jzuluaga55@gmail.com", "350 634 2747", "Calle Luna Calle Sol", "Manager");
-            var owner = await CheckUserAsync("2020", "Juan", "Zuluaga", "jzuluaga55@hotmail.com", "350 634 2747", "Calle Luna Calle Sol", "Owner");
-            var lessee = await CheckUserAsync("2020", "Juan", "Zuluaga", "carlos.zuluaga@globant.com", "350 634 2747", "Calle Luna Calle Sol", "Lessee");
+            var manager = await CheckUserAsync("1010", "Juan", "Manager", "manager@kayiensoft.com", "350 634 2747", "Calle Luna Calle Sol", "Manager");
+            var owner = await CheckUserAsync("2020", "Juan", "Owner", "owner@kayiensoft.com", "350 634 2747", "Calle Luna Calle Sol", "Owner");
+            var lessee = await CheckUserAsync("3030", "Juan", "Lessee", "lessee@gkayiensoft.com", "350 634 2747", "Calle Luna Calle Sol", "Lessee");
             await CheckPropertyTypesAsync();
             await CheckManagerAsync(manager);
             await CheckOwnersAsync(owner);
